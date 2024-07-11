@@ -1,0 +1,343 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(208, 205, 205);
+    overflow-x: hidden;
+}
+
+/* login page */
+
+/* navbar */
+.nav {
+    width: 100vw;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+}
+
+.nav .center {
+    width: 30%;
+}
+
+.nav .center ul li {
+    list-style: none;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.nav .search-box {
+    width: 45%;
+}
+
+.nav .ul1 .dropdown-menu #menu {
+    padding: 3px 0px;
+    margin: 2px 10px;
+}
+
+.nav .ul1 .dropdown-menu #menu:hover {
+    background-color: rgb(233, 228, 228);
+}
+
+.nav .center .ul1 li:hover {
+    color: rgb(23, 154, 43);
+    font-weight: 700;
+}
+
+
+#btn {
+    font-size: 18px !important;
+    font-weight: 700;
+}
+
+.nav .dropdown-menu {
+    width: 150px;
+}
+
+.nav .dropdown-menu button {
+    width: 80%;
+    font-weight: 500;
+    color: white;
+    border: 1px solid red;
+    margin-top: 20px;
+}
+
+.nav .drop-down-icon {
+    display: none;
+}
+
+/* hero section scroll img */
+.hero {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 70px !important;
+}
+
+.slide {
+    margin-top: 10px;
+}
+
+.carousel .carousel-indicators button {
+    width: 5px;
+}
+
+.hero .product-section {
+    margin-left: 8px;
+}
+
+.hero .product-section img {
+    height: 250px !important;
+    width: 200px !important;
+    margin: 5px 40px;
+}
+
+.hero .product2 img {
+    width: 100px !important;
+    height: 150px !important;
+
+}
+
+.hero .product2 #rosemary {
+    width: 70px !important;
+}
+
+.hero .product2 .card p {
+    text-align: start;
+}
+
+/* scroll product section machines */
+.hero .scroll-product {
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.scroll-product::-webkit-scrollbar {
+    display: none;
+}
+
+.hero .scroll-product .scroll-page,
+.scroll-page2,
+.scroll-page3 {
+    width: 200%;
+    background-color: rgb(94, 15, 65);
+}
+
+.hero .scroll-product .scroll-page2 {
+    background-color: white;
+}
+
+.hero .scroll-product .scroll-page img {
+    height: 200px !important;
+    width: 150px;
+    margin: 5px 50px;
+}
+
+.hero .scroll-product .scroll-page2 img {
+    width: 250px;
+    height: 200px;
+}
+
+.hero .scroll-product .scroll-page .card,
+.scroll-page2 .card {
+    text-align: center;
+}
+
+.hero .scroll-product .scroll-page2 .card {
+    border: none;
+}
+
+.hero .scroll-product .scroll-page .card .btn,
+.scroll-page2 .card .btn {
+    width: 80%;
+}
+
+/* see more section */
+.hero .see-more-section {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.hero .see-more {
+    width: 24%;
+    background-color: white;
+    padding: 10px;
+}
+
+.hero .see-more h4 {
+    color: rgb(56, 55, 55);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 10px 0px;
+}
+
+.hero .see-more .box-see-more .card,
+.see-more .box2-see-more .card,
+.box3-see-more .card {
+    border: none;
+    border-radius: none !important;
+}
+
+.hero .card p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.hero .see-more a {
+    text-decoration: none;
+}
+
+.hero .see-more .box-see-more .card img,
+.see-more .box2-see-more .card img {
+    width: 90%;
+    margin: 0px 10px;
+    padding-top: 5px;
+    line-height: 0.2;
+
+}
+
+.see-more .box3-see-more .card img {
+    width: 60px !important;
+    margin-left: 40px;
+}
+
+.see-more .box3-see-more .women1 img {
+    width: 100px !important;
+}
+
+.see-more .box3-see-more .women2 img {
+    width: 80px !important;
+}
+
+/* product2 section cosmatics */
+.product2 .card #darma,
+#foundation {
+    width: 150px !important;
+}
+
+/* footer section */
+footer {
+    height: 400px;
+    width: 100%;
+    background-color: rgb(35, 47, 62);
+    margin-top: 10px;
+    position: relative;
+    bottom: 0;
+}
+
+footer .foot {
+    justify-content: center;
+    padding-top: 50px;
+}
+
+footer .foot ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer .foot ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+footer button {
+    font-size: 1rem !important;
+}
+
+footer button img {
+    width: 20px;
+}
+
+
+/* media Query */
+@media screen and (max-width:1455px) {
+    .Login .box {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Login .box img {
+        width: 1vw;
+    }
+
+    .Login .box button {
+        width: 80% !important;
+        font-size: 2vw !important;
+        margin: 0px !important;
+    }
+
+}
+
+@media screen and (max-width:1400px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero .product-section .card img {
+        height: 200px !important;
+        width: 150px !important;
+        margin: 5px 60px;
+    }
+
+    .hero .scroll-product .scroll-page .card img {
+        height: 150px !important;
+        width: 100px;
+        margin: 5px 50px;
+    }
+
+    .hero .product2 {
+        overflow-x: wrap;
+    }
+
+    .hero .product2 .card img {
+        width: 80px !important;
+        height: 100px !important;
+    }
+
+    .product2 .card #darma,
+    #foundation {
+        width: 130px !important;
+    }
+
+    .hero .scroll-product .scroll-page,
+    .scroll-page2,
+    .scroll-page3 {
+        width: 230%;
+        background-color: rgb(94, 15, 65);
+    }
+
+    .hero .scroll-product .scroll-page3 {
+        width: 220%;
+    }
+}
+
+@media screen and (max-width:806px) {
+    .Login .box img {
+        width: 100% !important;
+    }
+
+    .box {
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .nav .center .ul1 {
+        display: none !important;
+    }
+
+    .nav .drop-down-icon {
+        display: block !important;
+        color: black;
+    }
+
+    .nav .user_Photo h6 {
+        display: none;
+    }
+
+}

@@ -1,0 +1,79 @@
+.snacks-section,
+.women-section {
+    width: 100%;
+    /* background-color: rgb(255, 255, 255) !important; */
+    color: black;
+}
+
+.snacks-section .product-section .card {
+    height: 400px;
+}
+
+.snacks-section .product-section .card img {
+    width: auto;
+    /* margin: 10px 30px !important; */
+    height: 200px !important;
+}
+
+#wid .wid {
+    width: 150px !important;
+    height: 200px !important;
+}
+
+#wid .wid2 {
+    width: 100px !important;
+    margin-left: 70px !important;
+}
+
+.snacks-section .product-section .card p {
+    font-weight: 500;
+}
+
+.snacks-section .product-section .card p:hover {
+    color: rgb(230, 132, 34);
+    font-weight: 500;
+}
+.snacks-section footer,
+.women-section {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.snacks-section .first-section,
+.women-section {
+    margin-top: 80px !important;
+}
+
+.women-section .first-section .card .w-wid {
+    width: 100px !important;
+    
+}
+.women-section .first-section .card img{
+    width: 150px;
+    height: 270px !important;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.women-section .scroll-product .card img{
+    height: 400px;
+}
+.women-section .scroll-product{
+    width: 100%;
+    overflow-x: scroll;
+}
+.women-section .scroll-product .scroll-page{
+    width: 200%;
+    background-color: rgb(244, 206, 230);
+}
+.women-section .scroll-product2 .card img{
+    height: 350px;
+}
+.scroll.scroll-product2 .card-body .buy,.cart{
+    width: 50% !important;
+}
+
+.saree2{
+    background-color: rgb(219, 244, 219);
+}
