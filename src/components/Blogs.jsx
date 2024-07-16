@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { getAuth } from 'firebase/auth/web-extension'
 import { useNavigate, Link } from 'react-router-dom'
+import Login from './Login'
 
 const Blogs = () => {
   const auth = getAuth();
@@ -10,6 +11,7 @@ const Blogs = () => {
 
     <>
       <Navbar />
+      <Login/>
       <div className="hero ">
         {/* /scroll bar*/}
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
