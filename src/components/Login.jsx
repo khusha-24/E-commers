@@ -1,7 +1,8 @@
 import React from 'react'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { auth } from '../Firebase'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate ,Link } from 'react-router-dom'
+import Blogs from './Blogs'
 
 const Login = () => {
 
@@ -10,7 +11,6 @@ const Login = () => {
   const formclick = async () => {
     const provider = new GoogleAuthProvider();
     const result = await signInWithPopup(auth, provider);
-
     console.log(result);
 
     navigate('/blogs');
@@ -48,7 +48,7 @@ const Login = () => {
             <input type="text" placeholder='Enter Your Name'  />
             <input type="Number" placeholder='Enter Your Contact' />
           </form>
-          <button onClick={formclick} style={{
+          <Link to={Blogs} onClick={formclick} style={{
             padding: '10px 30px',
             backgroundColor: 'green',
             border: '1px solid green',
@@ -58,7 +58,7 @@ const Login = () => {
             width: '190px',
             marginRight: '20px',
             marginTop:"20px"
-          }}>Login</button>
+          }}>Login</Link>
         </div>
       </div>
     </>
