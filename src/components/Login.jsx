@@ -1,20 +1,25 @@
 import React from 'react'
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { auth } from '../Firebase'
-
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
+
+  const navigate = useNavigate();
 
   const formclick = async () => {
     const provider = new GoogleAuthProvider();
     const result = await signInWithPopup(auth, provider);
 
     console.log(result);
+
+    navigate('/blogs');
     
   }
   return (
     <>
-      <div className="Login d-flex" style={{
+      <div className="Login d-flex " style={{
+        height: "50vh"
       }}>
         <div className='box'
           style={{
@@ -29,8 +34,7 @@ const Login = () => {
             display:"flex",
             flexDirection:"column",
             justifyContent:"center",
-            alignItems:"center",
-            zIndex:"1"
+            alignItems:"center"
           }}>
 
           <img style={{
