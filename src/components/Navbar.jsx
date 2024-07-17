@@ -10,8 +10,8 @@ const Navbar = () => {
   const logout = () => {
     auth.signOut();
     navigate('/')
+  
   }
-
   return (
     <>
       <div className="nav d-flex px-3 align-items-center fixed-top mb-5">
@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <form class="d-flex search-box">
       <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search"/>
-      <Link to={'/blogs'} class="btn btn-outline-success" type="submit">Search</Link>
+      <Link to={'/'} class="btn btn-outline-success" type="submit">Search</Link>
     </form>
         {/* Home & Menu */}
         <div className="center d-flex justify-content-end">
@@ -58,7 +58,7 @@ const Navbar = () => {
                   Menu
                 </button>
                 <ul className="dropdown-menu rounded-0">
-                  <li id='/'>Home</li>
+                  <li id='blogs'>Home</li>
                   <li id='women'>Women</li>
                   <li id='men'>Men</li>
                   <li id='kids'>Kids</li>
