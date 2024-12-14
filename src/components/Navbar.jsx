@@ -1,26 +1,26 @@
 import React from 'react'
-import { getAuth } from 'firebase/auth'
-import { auth } from '../Firebase'
+// import { getAuth } from 'firebase/auth'
+// import { auth } from '../Firebase'
 import { useNavigate,Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const navigate = useNavigate();
-  const auth = getAuth();
+  // const navigate = useNavigate();
+  // const auth = getAuth();
 
-  const logout = () => {
-    auth.signOut();
-    navigate('/')
+  // const logout = () => {
+  //   auth.signOut();
+  //   navigate('/')
   
-  }
+  
   return (
     <>
       <div className="nav d-flex px-3 align-items-center fixed-top mb-5">
         <div className="user_Photo left d-flex align-items-center gap-2 ">
-          <img src={auth.currentUser.photoURL} alt="" style={{
+          <img src={'khusha'} alt="" style={{
             width: '50px',
             borderRadius: '100%'
           }} />
-          <h6>{auth.currentUser.displayName}</h6>
+          <h6>{'Kushavarta'}</h6>
         </div>
         <form class="d-flex search-box">
       <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search"/>
@@ -42,7 +42,7 @@ const Navbar = () => {
                   <li id='menu'> <Link to={'/women'}style={{textDecoration:"none" ,color:"black"}}>Women Wear</Link></li>
                   <li id='menu'> <Link to={'/men'}style={{textDecoration:"none" ,color:"black"}}>Men's Wear</Link></li>
                   <li id='menu'> <Link to={'/kids'}style={{textDecoration:"none" ,color:"black"}}>Kid's Wear</Link></li>
-                  <li ><button onClick={logout} className='bg-danger rounded-1 py-2'>logout</button></li>
+                  {/* <li ><button onClick={logout} className='bg-danger rounded-1 py-2'>logout</button></li> */}
                 </ul>
               </div>
             </li>
@@ -64,7 +64,7 @@ const Navbar = () => {
                   <li id='kids'>Kids</li>
                   <li id='snacks'>snacks</li>
                   <li id=''>Phone</li>
-                  <li ><button onClick={logout} className='bg-danger rounded-1'>logout</button></li>
+                  {/* <li ><button onClick={logout} className='bg-danger rounded-1'>logout</button></li> */}
                 </ul>
               </div>
             </li>

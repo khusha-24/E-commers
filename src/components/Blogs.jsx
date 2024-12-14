@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import { getAuth } from 'firebase/auth/web-extension'
+// import { getAuth } from 'firebase/auth/web-extension'
 import { useNavigate, Link } from 'react-router-dom'
 
 const Blogs = () => {
-  const auth = getAuth();
+  //const auth = getAuth();
   return (
 
     <>
